@@ -12,15 +12,57 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
+## 📑 Table of Contents
+
+- [Overview](#-overview)
+- [Project Highlights](#-project-highlights)
+- [Results](#-results)
+- [Features](#-features)
+- [System Flow](#-system-flow)
+- [Hardware Components](#-hardware-components)
+- [Software Stack](#-software-stack)
+- [Project Structure](#-project-structure)
+- [How It Works](#-how-it-works)
+- [Screenshots](#-screenshots)
+- [Installation](#-installation)
+- [Future Improvements](#-future-improvements)
+- [Challenges Faced](#-challenges-faced)
+- [Lessons Learned](#-lessons-learned)
+- [Author](#-author)
 
 ## 📖 Overview
 
-The **ESP32 Smart Archery Game** is a real-time IoT-based scoring system that automates hit detection for archery practice using an ESP32 microcontroller, an IR sensor grid, Firebase Realtime Database, and a responsive web dashboard.
+The **ESP32 Smart Archery Game** is an IoT-based real-time archery scoring system that combines embedded systems, cloud computing, and modern web technologies to automate the traditional archery scoring process.
 
-Instead of manual scoring, the system detects arrow impacts on the target, pushes hit data to the cloud instantly, and reflects the updated score on a live dashboard — combining embedded systems, cloud integration, and modern web development into a single end-to-end project.
+The system uses an **ESP32 microcontroller** connected to **IR sensors** to detect arrow hits on the target. Whenever a hit is detected, the ESP32 instantly communicates with the web application, where scores are processed, synchronized with **Firebase Realtime Database**, and displayed on a responsive dashboard in real time.
+
+Unlike conventional manual scoring methods, this project provides **instant score calculation**, **live leaderboard updates**, **multi-level gameplay**, and a seamless user experience by integrating hardware and software into a single connected ecosystem.
+
+This project demonstrates practical knowledge of **IoT systems**, **embedded programming**, **real-time communication**, **cloud integration**, and **responsive web application development**.
+
 
 
 ---
+## 🚀 Project Highlights
+
+* Developed a complete end-to-end IoT application.
+* Integrated ESP32 hardware with a responsive web dashboard.
+* Connected the system to Firebase Realtime Database for cloud synchronization.
+* Implemented real-time score updates and leaderboard synchronization.
+* Designed a multi-level gameplay system with automatic score calculation.
+* Built a responsive interface for desktop and mobile devices.
+* Enabled wireless communication between embedded hardware and the web application.
+
+
+## 📊 Results
+
+* ✅ Automated real-time archery score calculation.
+* ✅ Instant synchronization with Firebase Realtime Database.
+* ✅ Live leaderboard updates across connected users.
+* ✅ Responsive user interface optimized for multiple screen sizes.
+* ✅ Smooth gameplay with automatic level progression.
+* ✅ Reliable communication between ESP32 hardware and the web application.
+* ✅ Successfully demonstrated an end-to-end IoT-based gaming system.
 
 ## ✨ Features
 
@@ -98,15 +140,26 @@ Instead of manual scoring, the system detects arrow impacts on the target, pushe
 
 
 ```text
-esp32-smart-archery-game/
 
-│── firmware/
-│── web/
-│── docs/
-│── images/
-│── assets/
-│── README.md
-│── LICENSE
+esp32-smart-archery-game/
+│
+├── firmware/
+│   └── archery_game.ino
+│
+├── web/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   ├── game.js
+│   └── config.js
+│
+├── docs/
+├── images/
+├── assets/
+│
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 
@@ -134,10 +187,13 @@ esp32-smart-archery-game/
 <!-- Add real screenshots once available -->
 
 ### Dashboard
-`images/dashboard.png`
+
+![Dashboard](images/dashboard.png)
+
+
 
 ### Hardware Setup
-`images/hardware.jpg`
+![Hardware Setup](images/hardware.jpg)
 
 ---
 ## ⚙️ Installation
@@ -154,11 +210,8 @@ Navigate to the project
 cd esp32-smart-archery-game
 ```
 
-Open
 
-```
-web/index.html
-```
+Open the `web/` directory and launch `index.html` in your browser, or serve it using a local development server for the best experience.
 
 Upload the firmware to ESP32 using Arduino IDE.
 
@@ -166,16 +219,7 @@ Configure your Firebase project and Wi-Fi credentials before running.
 
 
 
-## 📊 Results
 
-- Real-time score updates
-- Multi-level gameplay
-- Firebase leaderboard synchronization
-- Smooth UI animations
-- Interactive audio feedback
-- Responsive design
-
----
 
 ## 🔮 Future Improvements
 
@@ -186,7 +230,30 @@ Configure your Firebase project and Wi-Fi credentials before running.
 - OTA firmware updates
 - Performance analytics dashboard
 
+## 🧩 Challenges Faced
+
+Throughout the development of this project, several technical challenges were encountered:
+
+* Establishing reliable communication between the ESP32 and the web application.
+* Synchronizing real-time game events without noticeable delays.
+* Managing multiple gameplay states across different levels.
+* Integrating embedded hardware with Firebase Realtime Database.
+* Designing a responsive interface that worked consistently across devices.
+* Ensuring smooth score calculation and leaderboard updates during gameplay.
+
 ---
+## 📚 Lessons Learned
+
+This project provided practical experience in several areas of software and hardware development, including:
+
+* IoT system design using ESP32.
+* Embedded programming with Arduino.
+* Firebase Realtime Database integration.
+* Real-time communication between hardware and web applications.
+* JavaScript-based game logic and UI development.
+* Responsive web design principles.
+* Project organization and documentation using GitHub.
+
 
 ## 👩‍💻 Author
 
