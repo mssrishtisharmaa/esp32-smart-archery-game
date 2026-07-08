@@ -192,10 +192,6 @@ esp32-smart-archery-game/
 ![Dashboard](images/dashboard.png)
 
 
-
-### Hardware Setup
-![Hardware Setup](images/hardware.jpg)
-
 ---
 ## ⚙️ Installation
 
@@ -255,7 +251,7 @@ This project provided practical experience in several areas of software and hard
 * Responsive web design principles.
 * Project organization and documentation using GitHub.
 
-
+> 🌐 **Live Demo:** https://mssrishtisharmaa.github.io/esp32-smart-archery-game/
 ## 👩‍💻 Author
 
 **Srishti Sharma**
